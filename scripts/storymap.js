@@ -147,13 +147,16 @@ $(window).on('load', function() {
         var lat = parseFloat(c['Latitude']);
         var lon = parseFloat(c['Longitude']);
 
-        chapterCount += 1;
+        if (c['Marker'] === 'Numbered') chapterCount += 1;
+
+        var markerNumber = c['Marker'] === 'Plain' ? '' : chapterCount;
+        if (c['Marker'] === 'CustomNumbered') markerNumber = c['Custom Number']
 
         markers.push(
           L.marker([lat, lon], {
             icon: L.ExtraMarkers.icon({
               icon: 'fa-number',
-              number: c['Marker'] === 'Plain' ? '' : chapterCount,
+              number: markerNumber,
               markerColor: c['Marker Color'] || 'blue'
             }),
             opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
