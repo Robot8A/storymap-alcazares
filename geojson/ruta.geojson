@@ -1,0 +1,1383 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ascent": 33.4,
+        "descent": 38.4,
+        "segments": [
+          {
+            "distance": 0.543,
+            "duration": 391.1,
+            "steps": [
+              {
+                "distance": 0.002,
+                "duration": 1.3,
+                "type": 11,
+                "instruction": "Head east",
+                "name": "-",
+                "way_points": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "distance": 0.055,
+                "duration": 39.4,
+                "type": 0,
+                "instruction": "Turn left",
+                "name": "-",
+                "way_points": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "distance": 0.089,
+                "duration": 63.8,
+                "type": 1,
+                "instruction": "Turn right",
+                "name": "-",
+                "way_points": [
+                  5,
+                  9
+                ]
+              },
+              {
+                "distance": 0.108,
+                "duration": 77.9,
+                "type": 1,
+                "instruction": "Turn right onto <b>Plaça de la Reforma</b>",
+                "name": "Plaça de la Reforma",
+                "way_points": [
+                  9,
+                  14
+                ]
+              },
+              {
+                "distance": 0.17,
+                "duration": 122.7,
+                "type": 0,
+                "instruction": "Turn left",
+                "name": "-",
+                "way_points": [
+                  14,
+                  21
+                ]
+              },
+              {
+                "distance": 0.055,
+                "duration": 39.7,
+                "type": 1,
+                "instruction": "Turn right onto <b>Camí dels Corrals</b>",
+                "name": "Camí dels Corrals",
+                "way_points": [
+                  21,
+                  25
+                ]
+              },
+              {
+                "distance": 0.02,
+                "duration": 14.5,
+                "type": 1,
+                "instruction": "Turn right",
+                "name": "-",
+                "way_points": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "distance": 0.044,
+                "duration": 31.8,
+                "type": 1,
+                "instruction": "Turn right onto <b>Carrer de Sant Marc</b>",
+                "name": "Carrer de Sant Marc",
+                "way_points": [
+                  26,
+                  29
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Carrer de Sant Marc, on the left",
+                "name": "-",
+                "way_points": [
+                  29,
+                  29
+                ]
+              }
+            ],
+            "descent": 17
+          },
+          {
+            "distance": 0.036,
+            "duration": 25.7,
+            "steps": [
+              {
+                "distance": 0.036,
+                "duration": 25.7,
+                "type": 11,
+                "instruction": "Head northwest on <b>Carrer de Sant Marc</b>",
+                "name": "Carrer de Sant Marc",
+                "way_points": [
+                  29,
+                  32
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Carrer de Sant Marc, on the left",
+                "name": "-",
+                "way_points": [
+                  32,
+                  32
+                ]
+              }
+            ]
+          },
+          {
+            "distance": 0.209,
+            "duration": 150.7,
+            "steps": [
+              {
+                "distance": 0.04,
+                "duration": 29,
+                "type": 11,
+                "instruction": "Head northwest on <b>Carrer de Sant Marc</b>",
+                "name": "Carrer de Sant Marc",
+                "way_points": [
+                  32,
+                  37
+                ]
+              },
+              {
+                "distance": 0.169,
+                "duration": 121.7,
+                "type": 6,
+                "instruction": "Continue straight onto <b>Via de Sant Ignasi</b>",
+                "name": "Via de Sant Ignasi",
+                "way_points": [
+                  37,
+                  45
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Via de Sant Ignasi, on the left",
+                "name": "-",
+                "way_points": [
+                  45,
+                  45
+                ]
+              }
+            ],
+            "ascent": 15.35820045471192
+          },
+          {
+            "distance": 0.117,
+            "duration": 84.3,
+            "steps": [
+              {
+                "distance": 0.05,
+                "duration": 35.8,
+                "type": 11,
+                "instruction": "Head northeast on <b>Via de Sant Ignasi</b>",
+                "name": "Via de Sant Ignasi",
+                "way_points": [
+                  45,
+                  50
+                ]
+              },
+              {
+                "distance": 0.019,
+                "duration": 13.3,
+                "type": 0,
+                "instruction": "Turn left onto <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  50,
+                  51
+                ]
+              },
+              {
+                "distance": 0.049,
+                "duration": 35.1,
+                "type": 4,
+                "instruction": "Turn slight left onto <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  51,
+                  53
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Carrer de Santa Llúcia, on the right",
+                "name": "-",
+                "way_points": [
+                  53,
+                  53
+                ]
+              }
+            ]
+          },
+          {
+            "distance": 0.405,
+            "duration": 291.9,
+            "steps": [
+              {
+                "distance": 0.043,
+                "duration": 31.1,
+                "type": 11,
+                "instruction": "Head southwest on <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  53,
+                  55
+                ]
+              },
+              {
+                "distance": 0.095,
+                "duration": 68.2,
+                "type": 6,
+                "instruction": "Continue straight onto <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  55,
+                  58
+                ]
+              },
+              {
+                "distance": 0.029,
+                "duration": 20.9,
+                "type": 12,
+                "instruction": "Keep left onto <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  58,
+                  61
+                ]
+              },
+              {
+                "distance": 0.063,
+                "duration": 45.7,
+                "type": 5,
+                "instruction": "Turn slight right onto <b>Carrer de Santa Llúcia</b>",
+                "name": "Carrer de Santa Llúcia",
+                "way_points": [
+                  61,
+                  67
+                ]
+              },
+              {
+                "distance": 0.088,
+                "duration": 63.7,
+                "type": 1,
+                "instruction": "Turn right onto <b>Carrer de Na Bastardes</b>",
+                "name": "Carrer de Na Bastardes",
+                "way_points": [
+                  67,
+                  72
+                ]
+              },
+              {
+                "distance": 0.047,
+                "duration": 34.1,
+                "type": 0,
+                "instruction": "Turn left onto <b>Baixada de Na Bastardes</b>",
+                "name": "Baixada de Na Bastardes",
+                "way_points": [
+                  72,
+                  75
+                ]
+              },
+              {
+                "distance": 0.039,
+                "duration": 28.2,
+                "type": 1,
+                "instruction": "Turn right onto <b>Carrer de Piques</b>",
+                "name": "Carrer de Piques",
+                "way_points": [
+                  75,
+                  76
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at Carrer de Piques, on the right",
+                "name": "-",
+                "way_points": [
+                  76,
+                  76
+                ]
+              }
+            ],
+            "ascent": 6.549999999999983,
+            "descent": 14.216700744628895
+          },
+          {
+            "distance": 0.213,
+            "duration": 153.1,
+            "steps": [
+              {
+                "distance": 0.029,
+                "duration": 21.2,
+                "type": 11,
+                "instruction": "Head north on <b>Carrer de Piques</b>",
+                "name": "Carrer de Piques",
+                "way_points": [
+                  76,
+                  79
+                ]
+              },
+              {
+                "distance": 0.027,
+                "duration": 19.5,
+                "type": 4,
+                "instruction": "Turn slight left",
+                "name": "-",
+                "way_points": [
+                  79,
+                  82
+                ]
+              },
+              {
+                "distance": 0.041,
+                "duration": 29.5,
+                "type": 0,
+                "instruction": "Turn left",
+                "name": "-",
+                "way_points": [
+                  82,
+                  84
+                ]
+              },
+              {
+                "distance": 0.115,
+                "duration": 82.9,
+                "type": 1,
+                "instruction": "Turn right",
+                "name": "-",
+                "way_points": [
+                  84,
+                  90
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at your destination, on the left",
+                "name": "-",
+                "way_points": [
+                  90,
+                  90
+                ]
+              }
+            ],
+            "descent": 7.150049972534191
+          },
+          {
+            "distance": 0.323,
+            "duration": 232.7,
+            "steps": [
+              {
+                "distance": 0.115,
+                "duration": 82.9,
+                "type": 11,
+                "instruction": "Head east on <b>Carrer de Sant Domènec</b>",
+                "name": "Carrer de Sant Domènec",
+                "way_points": [
+                  90,
+                  96
+                ]
+              },
+              {
+                "distance": 0.095,
+                "duration": 68.6,
+                "type": 0,
+                "instruction": "Turn left",
+                "name": "-",
+                "way_points": [
+                  96,
+                  102
+                ]
+              },
+              {
+                "distance": 0.094,
+                "duration": 67.5,
+                "type": 4,
+                "instruction": "Turn slight left onto <b>Carrer de Sant Miquel</b>",
+                "name": "Carrer de Sant Miquel",
+                "way_points": [
+                  102,
+                  110
+                ]
+              },
+              {
+                "distance": 0.019,
+                "duration": 13.3,
+                "type": 13,
+                "instruction": "Keep right",
+                "name": "-",
+                "way_points": [
+                  110,
+                  111
+                ]
+              },
+              {
+                "distance": 0.001,
+                "duration": 0.4,
+                "type": 0,
+                "instruction": "Turn left",
+                "name": "-",
+                "way_points": [
+                  111,
+                  112
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at your destination, on the left",
+                "name": "-",
+                "way_points": [
+                  112,
+                  112
+                ]
+              }
+            ],
+            "ascent": 9.049950027465826
+          },
+          {
+            "distance": 0.089,
+            "duration": 63.7,
+            "steps": [
+              {
+                "distance": 0.001,
+                "duration": 0.4,
+                "type": 11,
+                "instruction": "Head southwest",
+                "name": "-",
+                "way_points": [
+                  112,
+                  113
+                ]
+              },
+              {
+                "distance": 0.019,
+                "duration": 13.3,
+                "type": 1,
+                "instruction": "Turn right",
+                "name": "-",
+                "way_points": [
+                  113,
+                  114
+                ]
+              },
+              {
+                "distance": 0.035,
+                "duration": 25.4,
+                "type": 1,
+                "instruction": "Turn right onto <b>Baixada del Varme</b>",
+                "name": "Baixada del Varme",
+                "way_points": [
+                  114,
+                  115
+                ]
+              },
+              {
+                "distance": 0.025,
+                "duration": 18.2,
+                "type": 0,
+                "instruction": "Turn left onto <b>Plaça de Sant Ignasi Malalt</b>",
+                "name": "Plaça de Sant Ignasi Malalt",
+                "way_points": [
+                  115,
+                  118
+                ]
+              },
+              {
+                "distance": 0.009,
+                "duration": 6.3,
+                "type": 6,
+                "instruction": "Continue straight",
+                "name": "-",
+                "way_points": [
+                  118,
+                  119
+                ]
+              },
+              {
+                "distance": 0,
+                "duration": 0,
+                "type": 10,
+                "instruction": "Arrive at your destination, on the right",
+                "name": "-",
+                "way_points": [
+                  119,
+                  119
+                ]
+              }
+            ],
+            "ascent": 2.4000000000000057
+          }
+        ],
+        "extras": {
+          "surface": {
+            "values": [
+              [
+                0,
+                6,
+                0
+              ],
+              [
+                6,
+                14,
+                3
+              ],
+              [
+                14,
+                26,
+                4
+              ],
+              [
+                26,
+                50,
+                3
+              ],
+              [
+                50,
+                51,
+                14
+              ],
+              [
+                51,
+                62,
+                1
+              ],
+              [
+                62,
+                65,
+                0
+              ],
+              [
+                65,
+                67,
+                1
+              ],
+              [
+                67,
+                72,
+                3
+              ],
+              [
+                72,
+                79,
+                1
+              ],
+              [
+                79,
+                89,
+                0
+              ],
+              [
+                89,
+                91,
+                14
+              ],
+              [
+                91,
+                99,
+                0
+              ],
+              [
+                99,
+                110,
+                14
+              ],
+              [
+                110,
+                114,
+                0
+              ],
+              [
+                114,
+                115,
+                14
+              ],
+              [
+                115,
+                119,
+                0
+              ]
+            ],
+            "summary": [
+              {
+                "value": 3,
+                "distance": 0.6,
+                "amount": 32.04
+              },
+              {
+                "value": 0,
+                "distance": 0.5,
+                "amount": 25.45
+              },
+              {
+                "value": 1,
+                "distance": 0.4,
+                "amount": 19.47
+              },
+              {
+                "value": 4,
+                "distance": 0.2,
+                "amount": 12.7
+              },
+              {
+                "value": 14,
+                "distance": 0.2,
+                "amount": 10.35
+              }
+            ]
+          },
+          "waytypes": {
+            "values": [
+              [
+                0,
+                6,
+                7
+              ],
+              [
+                6,
+                14,
+                3
+              ],
+              [
+                14,
+                25,
+                7
+              ],
+              [
+                25,
+                26,
+                8
+              ],
+              [
+                26,
+                50,
+                2
+              ],
+              [
+                50,
+                62,
+                3
+              ],
+              [
+                62,
+                65,
+                7
+              ],
+              [
+                65,
+                79,
+                3
+              ],
+              [
+                79,
+                118,
+                7
+              ],
+              [
+                118,
+                119,
+                8
+              ]
+            ],
+            "summary": [
+              {
+                "value": 7,
+                "distance": 0.9,
+                "amount": 46.04
+              },
+              {
+                "value": 3,
+                "distance": 0.7,
+                "amount": 34.95
+              },
+              {
+                "value": 2,
+                "distance": 0.3,
+                "amount": 17.51
+              },
+              {
+                "value": 8,
+                "distance": 0,
+                "amount": 1.5
+              }
+            ]
+          },
+          "steepness": {
+            "values": [
+              [
+                0,
+                45,
+                -1
+              ],
+              [
+                45,
+                119,
+                1
+              ]
+            ],
+            "summary": [
+              {
+                "value": 1,
+                "distance": 1.2,
+                "amount": 63.75
+              },
+              {
+                "value": -1,
+                "distance": 0.7,
+                "amount": 36.25
+              }
+            ]
+          }
+        },
+        "summary": {
+          "distance": 1.935,
+          "duration": 1393.2
+        },
+        "way_points": [
+          0,
+          29,
+          32,
+          45,
+          53,
+          76,
+          90,
+          112,
+          119
+        ],
+        "opacity": 0.9
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.826433,
+            41.720313,
+            238
+          ],
+          [
+            1.826455,
+            41.720313,
+            238
+          ],
+          [
+            1.826455,
+            41.72033,
+            238
+          ],
+          [
+            1.826454,
+            41.720457,
+            238
+          ],
+          [
+            1.826454,
+            41.720484,
+            238
+          ],
+          [
+            1.826031,
+            41.720425,
+            238
+          ],
+          [
+            1.82602,
+            41.720462,
+            238
+          ],
+          [
+            1.826003,
+            41.720516,
+            238
+          ],
+          [
+            1.82584,
+            41.721055,
+            234.5
+          ],
+          [
+            1.825804,
+            41.721204,
+            233.8
+          ],
+          [
+            1.826208,
+            41.721315,
+            232
+          ],
+          [
+            1.826389,
+            41.721348,
+            231.2
+          ],
+          [
+            1.826623,
+            41.721374,
+            230.4
+          ],
+          [
+            1.826872,
+            41.721378,
+            228.8
+          ],
+          [
+            1.82707,
+            41.721354,
+            227.9
+          ],
+          [
+            1.827102,
+            41.721401,
+            227.1
+          ],
+          [
+            1.827212,
+            41.721423,
+            226.2
+          ],
+          [
+            1.828147,
+            41.721512,
+            221.6
+          ],
+          [
+            1.828651,
+            41.721579,
+            221.3
+          ],
+          [
+            1.828694,
+            41.721721,
+            221.2
+          ],
+          [
+            1.828633,
+            41.721841,
+            221.2
+          ],
+          [
+            1.828589,
+            41.721835,
+            221.1
+          ],
+          [
+            1.828552,
+            41.721902,
+            221.1
+          ],
+          [
+            1.828429,
+            41.722007,
+            221
+          ],
+          [
+            1.828291,
+            41.722254,
+            221
+          ],
+          [
+            1.828282,
+            41.722268,
+            221
+          ],
+          [
+            1.828502,
+            41.722346,
+            221
+          ],
+          [
+            1.828596,
+            41.722228,
+            221
+          ],
+          [
+            1.828753,
+            41.7221,
+            221
+          ],
+          [
+            1.828845,
+            41.722048,
+            221
+          ],
+          [
+            1.828753,
+            41.7221,
+            221
+          ],
+          [
+            1.828596,
+            41.722228,
+            221
+          ],
+          [
+            1.828554,
+            41.72228,
+            221
+          ],
+          [
+            1.828502,
+            41.722346,
+            221
+          ],
+          [
+            1.828487,
+            41.722365,
+            221
+          ],
+          [
+            1.828438,
+            41.72244,
+            221
+          ],
+          [
+            1.828387,
+            41.722519,
+            221
+          ],
+          [
+            1.828333,
+            41.722603,
+            221
+          ],
+          [
+            1.828285,
+            41.722665,
+            222.5
+          ],
+          [
+            1.828228,
+            41.722745,
+            223.5
+          ],
+          [
+            1.82818,
+            41.722861,
+            224.6
+          ],
+          [
+            1.828183,
+            41.723008,
+            225.7
+          ],
+          [
+            1.828242,
+            41.723195,
+            228.3
+          ],
+          [
+            1.828269,
+            41.723249,
+            229.4
+          ],
+          [
+            1.828303,
+            41.723297,
+            230.4
+          ],
+          [
+            1.828836,
+            41.723972,
+            236.4
+          ],
+          [
+            1.828932,
+            41.724094,
+            243
+          ],
+          [
+            1.828978,
+            41.724153,
+            243
+          ],
+          [
+            1.829017,
+            41.724236,
+            243
+          ],
+          [
+            1.82899,
+            41.724338,
+            243
+          ],
+          [
+            1.82897,
+            41.724379,
+            243
+          ],
+          [
+            1.828771,
+            41.724304,
+            243
+          ],
+          [
+            1.828695,
+            41.724218,
+            243
+          ],
+          [
+            1.828422,
+            41.723952,
+            243
+          ],
+          [
+            1.828374,
+            41.723906,
+            243
+          ],
+          [
+            1.828081,
+            41.723658,
+            243
+          ],
+          [
+            1.828023,
+            41.723617,
+            243
+          ],
+          [
+            1.827855,
+            41.723455,
+            243
+          ],
+          [
+            1.82741,
+            41.722971,
+            243
+          ],
+          [
+            1.827365,
+            41.722887,
+            243
+          ],
+          [
+            1.82733,
+            41.722813,
+            243
+          ],
+          [
+            1.827296,
+            41.722725,
+            241.7
+          ],
+          [
+            1.827255,
+            41.722695,
+            240.6
+          ],
+          [
+            1.827183,
+            41.722672,
+            239.5
+          ],
+          [
+            1.827115,
+            41.722651,
+            238.6
+          ],
+          [
+            1.827051,
+            41.722627,
+            237.5
+          ],
+          [
+            1.827006,
+            41.722609,
+            236.4
+          ],
+          [
+            1.826608,
+            41.722482,
+            233.2
+          ],
+          [
+            1.826374,
+            41.722655,
+            231.1
+          ],
+          [
+            1.82624,
+            41.722729,
+            230.1
+          ],
+          [
+            1.826218,
+            41.72275,
+            229
+          ],
+          [
+            1.826202,
+            41.722779,
+            228.8
+          ],
+          [
+            1.825914,
+            41.723076,
+            228.8
+          ],
+          [
+            1.825684,
+            41.722957,
+            229.1
+          ],
+          [
+            1.825455,
+            41.722902,
+            230.3
+          ],
+          [
+            1.825404,
+            41.722901,
+            231.6
+          ],
+          [
+            1.825248,
+            41.723234,
+            235.3
+          ],
+          [
+            1.82521,
+            41.723317,
+            246
+          ],
+          [
+            1.825139,
+            41.723462,
+            246
+          ],
+          [
+            1.825145,
+            41.723485,
+            246
+          ],
+          [
+            1.825096,
+            41.723592,
+            246
+          ],
+          [
+            1.825101,
+            41.723652,
+            246
+          ],
+          [
+            1.825107,
+            41.723723,
+            246
+          ],
+          [
+            1.824851,
+            41.723775,
+            244.8
+          ],
+          [
+            1.824623,
+            41.72378,
+            243.8
+          ],
+          [
+            1.824606,
+            41.723832,
+            243
+          ],
+          [
+            1.82455,
+            41.72399,
+            242.3
+          ],
+          [
+            1.824334,
+            41.724596,
+            239.9
+          ],
+          [
+            1.824302,
+            41.724697,
+            239.6
+          ],
+          [
+            1.824276,
+            41.724778,
+            239.4
+          ],
+          [
+            1.824271,
+            41.724777,
+            238.8
+          ],
+          [
+            1.824276,
+            41.724778,
+            235
+          ],
+          [
+            1.824302,
+            41.724697,
+            235
+          ],
+          [
+            1.824334,
+            41.724596,
+            235
+          ],
+          [
+            1.82455,
+            41.72399,
+            235
+          ],
+          [
+            1.824606,
+            41.723832,
+            235
+          ],
+          [
+            1.824623,
+            41.72378,
+            235
+          ],
+          [
+            1.824851,
+            41.723775,
+            235.3
+          ],
+          [
+            1.825107,
+            41.723723,
+            236.5
+          ],
+          [
+            1.825134,
+            41.723717,
+            237.1
+          ],
+          [
+            1.825357,
+            41.72367,
+            237.6
+          ],
+          [
+            1.825548,
+            41.723612,
+            238.1
+          ],
+          [
+            1.825727,
+            41.723569,
+            238.5
+          ],
+          [
+            1.825768,
+            41.723572,
+            238.8
+          ],
+          [
+            1.825997,
+            41.723599,
+            239.4
+          ],
+          [
+            1.826031,
+            41.723595,
+            239.9
+          ],
+          [
+            1.826081,
+            41.72359,
+            240.5
+          ],
+          [
+            1.826245,
+            41.723569,
+            241
+          ],
+          [
+            1.826439,
+            41.723505,
+            241.6
+          ],
+          [
+            1.826682,
+            41.723471,
+            242.7
+          ],
+          [
+            1.826826,
+            41.723454,
+            243.2
+          ],
+          [
+            1.827,
+            41.72335,
+            243.6
+          ],
+          [
+            1.827005,
+            41.723354,
+            244
+          ],
+          [
+            1.827,
+            41.72335,
+            243
+          ],
+          [
+            1.826826,
+            41.723454,
+            244
+          ],
+          [
+            1.826832,
+            41.723772,
+            245
+          ],
+          [
+            1.826814,
+            41.723771,
+            245.1
+          ],
+          [
+            1.826817,
+            41.723917,
+            245.3
+          ],
+          [
+            1.8268,
+            41.723985,
+            245.3
+          ],
+          [
+            1.826766,
+            41.72406,
+            245.4
+          ]
+        ]
+      }
+    }
+  ]
+}
