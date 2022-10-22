@@ -6,7 +6,7 @@ Storymap Logo,https://geocine.uc3m.es/img/footers/logo%20uc3m.png,Path to a logo
 Google Analytics Tracking ID,,Sample format: UA-5488840-29
 Map Settings,,"For help, see tutorial in HandsOnDataViz.org"
 Basemap Tiles,CartoDB.Voyager,Drop-down menu for background basemap tiles
-Zoom Controls,bottomright,
+Zoom Controls,topright,
 Narrative Background Color,,
 Narrative Text Color,,
 Narrative Link Color,,
@@ -19,3 +19,4 @@ Author Name,UC3M,"Appears in map credits as ""View data by..."" (or leave blank)
 Author Email or Website,,Create link in Author Name by inserting your email or web address (or leave blank)
 Author GitHub Repo Link,https://github.com/handsondataviz/leaflet-storymaps-with-google-sheets,"Insert your code repo URL to appear as link in ""View code..."" (or leave blank)"
 Code Credit,"<a href=""https://handsondataviz.org"">HandsOnDataViz</a>","Appears in credits as ""...code by..."" (or leave blank)"
+Scale Controls,bottomright,
