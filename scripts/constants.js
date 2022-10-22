@@ -11,6 +11,7 @@ var constants = {
 	// Map Settings
 	_tileProvider: 'Basemap Tiles',
 	_zoomControls: 'Zoom Controls',
+    _scaleControls: 'Scale Controls',
   _narrativeWidth: 'Narrative Width',
   _imgContainerHeight: 'Media Container Height',
   _pixelsAfterFinalChapter: 'Pixels After Final Chapter',

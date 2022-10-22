@@ -110,6 +110,14 @@ $(window).on('load', function() {
     // Load tiles
     addBaseMap();
 
+    // Add scale if needed
+    if (getSetting('_scaleControls') !== 'off') {
+      L.control.scale({
+        position: getSetting('_scaleControls'),
+        imperial: false
+      }).addTo(map);
+    }
+
     // Add zoom controls if needed
     if (getSetting('_zoomControls') !== 'off') {
       L.control.zoom({
@@ -139,6 +147,7 @@ $(window).on('load', function() {
     var currentlyInFocus; // integer to specify each chapter is currently in focus
     var overlay;  // URL of the overlay for in-focus chapter
     var geoJsonOverlay;
+    var geoJsonOverlayName = null;
 
     for (i in chapters) {
       var c = chapters[i];
@@ -308,11 +317,6 @@ $(window).on('load', function() {
             map.removeLayer(overlay);
           }
 
-          // Remove GeoJson Overlay tile layer if needed
-          if (map.hasLayer(geoJsonOverlay)) {
-            map.removeLayer(geoJsonOverlay);
-          }
-
           var c = chapters[i];
 
           // Add chapter's overlay tiles if specified in options
@@ -342,33 +346,49 @@ $(window).on('load', function() {
           }
 
           if (c['GeoJSON Overlay']) {
-            $.getJSON(c['GeoJSON Overlay'], function(geojson) {
-
-              // Parse properties string into a JS object
-              var props = {};
-
-              if (c['GeoJSON Feature Properties']) {
-                var propsArray = c['GeoJSON Feature Properties'].split(';');
-                var props = {};
-                for (var p in propsArray) {
-                  if (propsArray[p].split(':').length === 2) {
-                    props[ propsArray[p].split(':')[0].trim() ] = propsArray[p].split(':')[1].trim();
-                  }
-                }
+            if (geoJsonOverlayName !== c['GeoJSON Overlay']){
+              // Remove GeoJson Overlay only if different from new one
+              if (map.hasLayer(geoJsonOverlay)) {
+                map.removeLayer(geoJsonOverlay);
               }
 
-              geoJsonOverlay = L.geoJson(geojson, {
-                style: function(feature) {
-                  return {
-                    fillColor: feature.properties.fillColor || props.fillColor || '#ffffff',
-                    weight: feature.properties.weight || props.weight || 1,
-                    opacity: feature.properties.opacity || props.opacity || 0.5,
-                    color: feature.properties.color || props.color || '#cccccc',
-                    fillOpacity: feature.properties.fillOpacity || props.fillOpacity || 0.5,
+              geoJsonOverlayName = c['GeoJSON Overlay'];
+
+              $.getJSON(c['GeoJSON Overlay'], function (geojson) {
+
+                // Parse properties string into a JS object
+                var props = {};
+
+                if (c['GeoJSON Feature Properties']) {
+                  var propsArray = c['GeoJSON Feature Properties'].split(';');
+                  var props = {};
+                  for (var p in propsArray) {
+                    if (propsArray[p].split(':').length === 2) {
+                      props[propsArray[p].split(':')[0].trim()] = propsArray[p].split(':')[1].trim();
+                    }
                   }
                 }
-              }).addTo(map);
-            });
+
+                geoJsonOverlay = L.geoJson(geojson, {
+                  style: function (feature) {
+                    return {
+                      fillColor: feature.properties.fillColor || props.fillColor || '#ffffff',
+                      weight: feature.properties.weight || props.weight || 1,
+                      opacity: feature.properties.opacity || props.opacity || 0.5,
+                      color: feature.properties.color || props.color || '#cccccc',
+                      fillOpacity: feature.properties.fillOpacity || props.fillOpacity || 0.5,
+                    }
+                  }
+                }).addTo(map);
+              });
+            }
+          } else {
+            // Remove GeoJson Overlay tile layer if needed
+            if (map.hasLayer(geoJsonOverlay)) {
+              map.removeLayer(geoJsonOverlay);
+            }
+
+            geoJsonOverlayName = null;
           }
 
           // Fly to the new marker destination if latitude and longitude exist
