@@ -442,9 +442,17 @@ $(window).on('load', function() {
     }
 
     var bounds = [];
+    var markersClusterLayer = L.markerClusterGroup({
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: true,
+      zoomToBoundsOnClick: false,
+      maxClusterRadius: 25,
+      removeOutsideVisibleBounds: false
+    });
     for (i in markers) {
       if (markers[i]) {
-        markers[i].addTo(map);
+        //markers[i].addTo(map);
+        markersClusterLayer.addLayer(markers[i]);
         markers[i]['_pixelsAbove'] = pixelsAbove[i];
         markers[i].on('click', function() {
           var pixels = parseInt($(this)[0]['_pixelsAbove']) + 5;
@@ -454,6 +462,7 @@ $(window).on('load', function() {
         bounds.push(markers[i].getLatLng());
       }
     }
+    map.addLayer(markersClusterLayer);
     map.fitBounds(bounds);
 
     $('#map, #narration, #title').css('visibility', 'visible');
@@ -462,7 +471,7 @@ $(window).on('load', function() {
     $('div#container0').addClass("in-focus");
     $('div#contents').animate({scrollTop: '1px'});
 
-    // On first load, check hash and if it contains an number, scroll down
+    // On first load, check hash and if it contains a number, scroll down
     if (parseInt(location.hash.substr(1))) {
       var containerId = parseInt( location.hash.substr(1) ) - 2;
       $('#contents').animate({
