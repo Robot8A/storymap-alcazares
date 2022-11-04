@@ -211,7 +211,7 @@ $(window).on('load', function() {
           width: '100%',
           height: '100%',
           frameborder: '0',
-          allow: 'autoplay; encrypted-media',
+          allow: 'autoplay; encrypted-media; picture-in-picture',
           allowfullscreen: 'allowfullscreen',
         });
 
