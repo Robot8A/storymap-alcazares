@@ -441,18 +441,24 @@ $(window).on('load', function() {
       });
     }
 
+    // Add markers to map
     var bounds = [];
-    var markersClusterLayer = L.markerClusterGroup({
-      spiderfyOnMaxZoom: true,
-      showCoverageOnHover: true,
-      zoomToBoundsOnClick: false,
-      maxClusterRadius: 25,
-      removeOutsideVisibleBounds: false
-    });
+    if (!trySetting('_cluster', false)) {
+      var markersClusterLayer = L.markerClusterGroup({
+        spiderfyOnMaxZoom: true,
+        showCoverageOnHover: true,
+        zoomToBoundsOnClick: false,
+        maxClusterRadius: 25,
+        removeOutsideVisibleBounds: false
+      });
+    }
     for (i in markers) {
       if (markers[i]) {
-        //markers[i].addTo(map);
-        markersClusterLayer.addLayer(markers[i]);
+        if (trySetting('_cluster', false)) {
+          markers[i].addTo(map);
+        } else {
+          markersClusterLayer.addLayer(markers[i]);
+        }
         markers[i]['_pixelsAbove'] = pixelsAbove[i];
         markers[i].on('click', function() {
           var pixels = parseInt($(this)[0]['_pixelsAbove']) + 5;
@@ -462,7 +468,9 @@ $(window).on('load', function() {
         bounds.push(markers[i].getLatLng());
       }
     }
-    map.addLayer(markersClusterLayer);
+    if (!trySetting('_cluster', false)) {
+      map.addLayer(markersClusterLayer);
+    }
     map.fitBounds(bounds);
 
     $('#map, #narration, #title').css('visibility', 'visible');

@@ -20,3 +20,4 @@ Author Email or Website,,Create link in Author Name by inserting your email or w
 Author GitHub Repo Link,https://github.com/handsondataviz/leaflet-storymaps-with-google-sheets,"Insert your code repo URL to appear as link in ""View code..."" (or leave blank)"
 Code Credit,"<a href=""https://handsondataviz.org"">HandsOnDataViz</a>","Appears in credits as ""...code by..."" (or leave blank)"
 Scale Controls,bottomright,
+Cluster,no

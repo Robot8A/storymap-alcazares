@@ -12,6 +12,7 @@ var constants = {
 	_tileProvider: 'Basemap Tiles',
 	_zoomControls: 'Zoom Controls',
     _scaleControls: 'Scale Controls',
+    _cluster: 'Cluster',
   _narrativeWidth: 'Narrative Width',
   _imgContainerHeight: 'Media Container Height',
   _pixelsAfterFinalChapter: 'Pixels After Final Chapter',
