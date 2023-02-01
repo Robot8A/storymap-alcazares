@@ -1,7 +1,7 @@
 Setting,Customize,Hints
 Storymap Info,,"For help, see tutorial in HandsOnDataViz.org"
-Storymap Title,"Plácido (Luis García Berlanga, 1961)",
-Storymap Subtitle,Visita nuestro proyecto <a href='https://geocine.uc3m.es/faces/mapa_faces.html' target='_blank'>Mapa FACES</a>.<br><small>Desplázate hacia abajo <i class='fa fa-chevron-down'></i></small>,"Add your subtitle, or delete that portion"
+Storymap Title,"",
+Storymap Subtitle,<small>Desplázate hacia abajo <i class='fa fa-chevron-down'></i></small>,"Add your subtitle, or delete that portion"
 Storymap Logo,https://geocine.uc3m.es/img/footers/logo%20uc3m.png,Path to a logo image
 Google Analytics Tracking ID,,Sample format: UA-5488840-29
 Map Settings,,"For help, see tutorial in HandsOnDataViz.org"
