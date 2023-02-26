@@ -141,6 +141,20 @@ $(window).on('load', function() {
       }
     }
 
+    var markerOnTop = function(k) {
+      /* sets markers z-index to 0 */
+      for (var i = 0; i < markers.length; i++) {
+        if (markers[i] && markers[i]._icon) {
+          markers[i].setZIndexOffset(0);
+
+          if (i == k) {
+            /* Adds marker-active class, which is orange, to marker k */
+            markers[k].setZIndexOffset(1000);
+          }
+        }
+      }
+    }
+
     var pixelsAbove = [];
     var chapterCount = 0;
 
@@ -399,6 +413,9 @@ $(window).on('load', function() {
               duration: 2, // default is 2 seconds
             });
           }
+          
+          // Fix for close by markers
+          markerOnTop(currentlyInFocus);
 
           // No need to iterate through the following chapters
           break;
