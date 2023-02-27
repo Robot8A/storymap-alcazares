@@ -12,7 +12,7 @@ Narrative Text Color,,
 Narrative Link Color,,
 Active Chapter Background Color,,
 Media Container Height,300,"Maximum height of the image, in pixels. 200 is default. The image will be fit into the container with its proportions kept (it won't be skewed)."
-Pixels After Final Chapter,600,In pixels. At least 100
+Pixels After Final Chapter,300,In pixels. At least 100
 Enable Lightbox for Images,yes,yes or no
 Credits,,"For help, see tutorial in HandsOnDataViz.org"
 Author Name,UC3M,"Appears in map credits as ""View data by..."" (or leave blank)"

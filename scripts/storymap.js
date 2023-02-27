@@ -413,6 +413,11 @@ $(window).on('load', function() {
               duration: 2, // default is 2 seconds
             });
           }
+
+          // Fix for first chapter
+          if (currentlyInFocus == 0) {
+            map.fitBounds(bounds, { animate: true, duration: 2 });
+          }
           
           // Fix for close by markers
           markerOnTop(currentlyInFocus);
@@ -428,7 +433,7 @@ $(window).on('load', function() {
       <div id='space-at-the-bottom'> \
         <a href='#top'>  \
           <i class='fa fa-chevron-up'></i></br> \
-          <small>Top</small>  \
+          <small>Volver arriba</small>  \
         </a> \
       </div> \
     ");
