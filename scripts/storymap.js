@@ -327,7 +327,7 @@ $(window).on('load', function() {
           markActiveColor(currentlyInFocus);
 
           // Remove overlay tile layer if needed
-          if (map.hasLayer(overlay)) {
+          if (overlay && map.hasLayer(overlay)) {
             map.removeLayer(overlay);
           }
 
@@ -362,7 +362,7 @@ $(window).on('load', function() {
           if (c['GeoJSON Overlay']) {
             if (geoJsonOverlayName !== c['GeoJSON Overlay']){
               // Remove GeoJson Overlay only if different from new one
-              if (map.hasLayer(geoJsonOverlay)) {
+              if (geoJsonOverlay && map.hasLayer(geoJsonOverlay)) {
                 map.removeLayer(geoJsonOverlay);
               }
 
@@ -398,7 +398,7 @@ $(window).on('load', function() {
             }
           } else {
             // Remove GeoJson Overlay tile layer if needed
-            if (map.hasLayer(geoJsonOverlay)) {
+            if (geoJsonOverlay && map.hasLayer(geoJsonOverlay)) {
               map.removeLayer(geoJsonOverlay);
             }
 
