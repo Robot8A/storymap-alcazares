@@ -175,17 +175,35 @@ $(window).on('load', function() {
         var markerNumber = c['Marker'] === 'Plain' ? '' : chapterCount;
         if (c['Marker'] === 'CustomNumbered') markerNumber = c['Custom Number']
 
-        markers.push(
-          L.marker([lat, lon], {
-            icon: L.ExtraMarkers.icon({
-              icon: 'fa-number',
-              number: markerNumber,
-              markerColor: c['Marker Color'] || 'blue'
-            }),
-            opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
-            interactive: c['Marker'] === 'Hidden' ? false : true,
-          }
-        ));
+        if (c['Marker Color'] != 'metro') {
+          markers.push(
+            L.marker([lat, lon], {
+              icon: L.ExtraMarkers.icon({
+                icon: 'fa-number',
+                number: markerNumber,
+                markerColor: c['Marker Color'] || 'blue'
+              }),
+              opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
+              interactive: c['Marker'] === 'Hidden' ? false : true,
+            }
+          ));
+        } else {
+          markers.push(
+            L.marker([lat, lon], {
+              icon: L.icon({
+                iconUrl: 'MetroMadridLogo.svg',
+            
+                iconSize:     [35,21], // size of the icon
+                //shadowSize:   [50, 64], // size of the shadow
+                //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                //shadowAnchor: [4, 62],  // the same for the shadow
+                //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+              }),
+              opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
+              interactive: c['Marker'] === 'Hidden' ? false : true,
+            })
+          )
+        }
 
       } else {
         markers.push(null);
