@@ -229,8 +229,8 @@ $(window).on('load', function() {
                 //shadowAnchor: [4, 62],  // the same for the shadow
                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
               }),*/
-              opacity: c['Marker'] === 'Hidden' ? 0 : 0.9,
-              interactive: c['Marker'] === 'Hidden' ? false : true,
+              opacity: 0.99,
+              interactive: true,
             })
           )
         }
