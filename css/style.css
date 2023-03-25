@@ -153,7 +153,7 @@ a.source:visited {
 }
 
 .leaflet-marker-icon {
-  opacity: 0.75;
+  opacity: 0.75 !important;
 }
 
 /*
@@ -161,7 +161,7 @@ a.source:visited {
   If you want to change the color, see options here: https://github.com/coryasilva/Leaflet.ExtraMarkers/blob/master/src/assets/css/leaflet.extra-markers.css
 */
 .marker-active {
-  background-position: -72px 0 !important;
+  opacity: 1 !important;
 }
 
 /* Storymap logo image above the title */
